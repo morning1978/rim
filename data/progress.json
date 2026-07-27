@@ -1,0 +1,38 @@
+{
+  "updated_at": "2026-07-25T16:00:00+08:00",
+  "items": [
+    {"id":"p1-01","phase":"原型与基础","phase_order":1,"item_order":1,"title":"确定项目定位与技术路线","detail":"完成 RIM 概念、Ren'Py 环境和基础工程结构。","status":"done","target":"已完成"},
+    {"id":"p1-02","phase":"原型与基础","phase_order":1,"item_order":2,"title":"建立核心数据结构","detail":"定义干员、技能、敌人、区域、物品、任务与存档状态。","status":"done","target":"已完成"},
+    {"id":"p1-03","phase":"原型与基础","phase_order":1,"item_order":3,"title":"完成双性相战斗原型","detail":"实现伤害矩阵、技能、敌人回合和基础结算。","status":"done","target":"已完成"},
+    {"id":"p1-04","phase":"原型与基础","phase_order":1,"item_order":4,"title":"建立自动化冒烟测试","detail":"覆盖关键流程、数据引用、任务与战斗公式。","status":"done","target":"持续维护"},
+    {"id":"p2-01","phase":"系统整合","phase_order":2,"item_order":1,"title":"完成主基地与移动流程","detail":"接通枢纽、区域移动、时间消耗与恢复。","status":"done","target":"已完成"},
+    {"id":"p2-02","phase":"系统整合","phase_order":2,"item_order":2,"title":"整合探索与随机事件","detail":"完善区域事件池、概率递进、掉落和拾取流程。","status":"done","target":"已完成"},
+    {"id":"p2-03","phase":"系统整合","phase_order":2,"item_order":3,"title":"整合背包、商店与合成","detail":"处理容量、溢出、丢弃、购买和配方逻辑。","status":"done","target":"已完成"},
+    {"id":"p2-04","phase":"系统整合","phase_order":2,"item_order":4,"title":"整合招募、任务与好感","detail":"实现干员管理、任务链和核心干员个人剧情入口。","status":"done","target":"已完成"},
+    {"id":"p2-05","phase":"系统整合","phase_order":2,"item_order":5,"title":"接入扑克小游戏原型","detail":"把独立训练沙盒接入 Ren'Py 基地事件与正式奖励。","status":"in_progress","target":"2026 Q3"},
+    {"id":"p3-01","phase":"规则锁定","phase_order":3,"item_order":1,"title":"吸收战斗补充规则","detail":"统一设计文档、数据表和游戏内实际行为。","status":"in_progress","target":"下一步"},
+    {"id":"p3-02","phase":"规则锁定","phase_order":3,"item_order":2,"title":"锁定技能与状态规则","detail":"明确叠加、持续时间、驱散、触发顺序和边界情况。","status":"todo","target":"2026 Q3"},
+    {"id":"p3-03","phase":"规则锁定","phase_order":3,"item_order":3,"title":"完成第一轮数值平衡","detail":"校准干员、敌人、物品、经济与区域难度曲线。","status":"todo","target":"2026 Q3"},
+    {"id":"p3-04","phase":"规则锁定","phase_order":3,"item_order":4,"title":"确定第一版内容边界","detail":"冻结区域、敌人、干员、事件和 Boss 数量。","status":"todo","target":"2026 Q3"},
+    {"id":"p4-01","phase":"第一章垂直切片","phase_order":4,"item_order":1,"title":"确定第一章完整流程","detail":"从开局招募到区域结算形成可连续游玩的章节。","status":"in_progress","target":"2026 Q3"},
+    {"id":"p4-02","phase":"第一章垂直切片","phase_order":4,"item_order":2,"title":"完成正式事件与分支文本","detail":"替换模板文本，检查条件、伏笔与结果回收。","status":"todo","target":"2026 Q3"},
+    {"id":"p4-03","phase":"第一章垂直切片","phase_order":4,"item_order":3,"title":"完成正式角色与场景资产","detail":"统一立绘、背景、UI、图标和战斗表现。","status":"in_progress","target":"持续进行"},
+    {"id":"p4-04","phase":"第一章垂直切片","phase_order":4,"item_order":4,"title":"完成音乐、音效与演出","detail":"补齐基地、探索、战斗、Boss 和 UI 声音。","status":"todo","target":"2026 Q4"},
+    {"id":"p4-05","phase":"第一章垂直切片","phase_order":4,"item_order":5,"title":"完成第一章 Boss 与结算","detail":"接通最终挑战、结局反馈和章节奖励。","status":"todo","target":"2026 Q4"},
+    {"id":"p5-01","phase":"Alpha 与试玩","phase_order":5,"item_order":1,"title":"完善存档与版本迁移","detail":"覆盖流程中断、旧存档升级和损坏保护。","status":"todo","target":"Alpha 前"},
+    {"id":"p5-02","phase":"Alpha 与试玩","phase_order":5,"item_order":2,"title":"完成新手引导","detail":"让新玩家无需开发者说明即可开始和推进。","status":"todo","target":"Alpha 前"},
+    {"id":"p5-03","phase":"Alpha 与试玩","phase_order":5,"item_order":3,"title":"完成首轮外部试玩","detail":"记录卡点、失败原因、时长与理解偏差。","status":"todo","target":"Alpha"},
+    {"id":"p5-04","phase":"Alpha 与试玩","phase_order":5,"item_order":4,"title":"集中修复阻塞与严重问题","detail":"确保第一章可从头到尾稳定通关。","status":"todo","target":"Alpha"},
+    {"id":"p5-05","phase":"Alpha 与试玩","phase_order":5,"item_order":5,"title":"性能与多分辨率测试","detail":"检查加载、内存、窗口比例和低配置表现。","status":"todo","target":"Beta 前"},
+    {"id":"p6-01","phase":"发布准备","phase_order":6,"item_order":1,"title":"完成官网与开发进度页","detail":"建立作品介绍、路线图和持久化更新日志。","status":"done","target":"已完成"},
+    {"id":"p6-02","phase":"发布准备","phase_order":6,"item_order":2,"title":"准备试玩版安装包","detail":"完成干净环境安装、更新与卸载测试。","status":"todo","target":"Beta"},
+    {"id":"p6-03","phase":"发布准备","phase_order":6,"item_order":3,"title":"准备宣传素材","detail":"制作截图、短片、媒体资料和版本说明。","status":"todo","target":"Beta"},
+    {"id":"p6-04","phase":"发布准备","phase_order":6,"item_order":4,"title":"完成版权与同人声明","detail":"核对素材授权、第三方许可证和非商业声明。","status":"todo","target":"发布前"},
+    {"id":"p6-05","phase":"发布准备","phase_order":6,"item_order":5,"title":"发布第一章试玩版","detail":"收集玩家反馈并建立后续补丁计划。","status":"todo","target":"目标版本"}
+  ],
+  "updates": [
+    {"id":3,"item_id":"p6-01","title":"GitHub Pages 静态官网版本建立","action":"完成公开发布准备","created_at":"2026-07-25T16:00:00+08:00"},
+    {"id":2,"item_id":"p6-01","title":"RIM 官网源码推送至私有 GitHub 仓库","action":"建立源码仓库","created_at":"2026-07-25T15:30:00+08:00"},
+    {"id":1,"item_id":"system","title":"RIM 开发路线图上线","action":"建立 6 个阶段、28 项任务的进度系统","created_at":"2026-07-12T12:00:00+08:00"}
+  ]
+}

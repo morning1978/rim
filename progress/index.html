@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROGRESS — RIM PROJECT</title>
+  <meta name="description" content="查看 RIM 的公开开发路线图和任务完成度。">
+  <meta property="og:title" content="PROGRESS — RIM PROJECT">
+  <meta property="og:image" content="https://celecean.com/rim/assets/og.png">
+  <link rel="canonical" href="https://celecean.com/rim/progress/">
+  <link rel="icon" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body data-page="progress" data-root="..">
+  <main>
+    <section class="pageHero">
+      <div class="shell">
+        <p class="eyebrow">ARCHIVE / 02 — PROGRESS</p>
+        <h1>公开开发进度</h1>
+        <p>六个开发阶段、二十八项具体任务。完成度随项目仓库中的路线图数据持续更新。</p>
+      </div>
+      <div class="pageHeroMark">RIM</div>
+    </section>
+
+    <section class="roadmap">
+      <div class="shell">
+        <div class="roadmapHead">
+          <div>
+            <p class="sectionNo">// DEVELOPMENT ROADMAP</p>
+            <h2>从原型到第一章试玩版</h2>
+            <p>这是供朋友与关注者查看的公开只读版本；任务状态由开发组提交后同步。</p>
+          </div>
+          <div class="radial" id="overallRadial" style="--p:0deg">
+            <div><strong><span id="overallPercent">0</span><sup>%</sup></strong><span>OVERALL</span></div>
+          </div>
+        </div>
+        <div class="summary">
+          <div><span>总任务</span><strong id="totalTasks">—</strong></div>
+          <div><span>已完成</span><strong id="doneTasks">—</strong></div>
+          <div><span>进行中</span><strong id="activeTasks">—</strong></div>
+          <div><span>数据更新</span><strong class="next" id="updatedAt">—</strong></div>
+        </div>
+        <div class="readonlyNote">PUBLIC VIEW · 进度由 GitHub 提交更新</div>
+        <div class="loading" id="progressLoading">正在读取开发路线图…</div>
+        <div class="phaseList" id="phaseList"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
