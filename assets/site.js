@@ -110,3 +110,36 @@ async function renderProgress() {
 }
 
 renderProgress();
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+async function renderNarrativeLogs() {
+  const feed = document.querySelector("#blogFeed");
+  if (!feed) return;
+
+  try {
+    const response = await fetch(`${root}/data/devlogs.json`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const entries = await response.json();
+    feed.innerHTML = entries.map((entry, index) => `
+      <article class="blogPost" id="log-${escapeHtml(entry.slug)}">
+        <header>
+          <time datetime="${escapeHtml(entry.slug)}">${escapeHtml(entry.date)}</time>
+          <span>RIM DEVLOG · ${String(index + 1).padStart(2, "0")}</span>
+        </header>
+        <div class="blogCopy">${entry.paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>
+      </article>
+    `).join("");
+  } catch {
+    feed.innerHTML = '<p class="empty error">暂时无法读取开发日志，请稍后刷新。</p>';
+  }
+}
+
+renderNarrativeLogs();
