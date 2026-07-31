@@ -196,6 +196,18 @@ img{max-width:100%}
 .blogCopy p:last-child{margin-bottom:0}
 .blogPostFooter{display:none}
 
+.storyPage{padding:82px 0 116px;background:linear-gradient(90deg,#0d4b9608 1px,transparent 1px);background-size:72px 72px}
+.storyToolbar{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.storyToolbar h2{font:900 39px/1.15 var(--display);letter-spacing:-.04em;margin:12px 0 8px;color:var(--navy)}
+.storyToolbar>div>p:last-child{margin:0;color:var(--muted);font:800 11px var(--mono);letter-spacing:.06em}
+.storyToolbar>a{flex:0 0 auto;background:var(--navy);color:var(--cream-light);padding:15px 20px;text-decoration:none;font:900 10px var(--mono);letter-spacing:.08em;box-shadow:5px 5px 0 var(--sky)}
+.storyToolbar>a:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--sky)}
+.storyReader{width:min(1060px,calc(100% - 30px));margin:44px auto 0;padding:52px 70px;background:var(--blue-dark);border:3px solid var(--navy);box-shadow:10px 10px 0 var(--sky)}
+.storySheet{position:relative;width:min(850px,100%);margin:0 auto 46px;background:#fff;box-shadow:0 18px 38px #00183766}
+.storySheet:last-child{margin-bottom:0}
+.storySheet img{display:block;width:100%;height:auto}
+.storySheet figcaption{position:absolute;right:-56px;top:8px;color:#b8ccdc;font:900 9px var(--mono);letter-spacing:.08em;writing-mode:vertical-rl}
+
 .contactPage{padding:96px 0 116px}
 .contactPage>.shell{display:grid;grid-template-columns:.7fr 1.3fr;gap:76px}
 .contactIntro>p:not(.sectionNo){color:var(--muted);font-size:13px;line-height:1.9}
@@ -271,6 +283,12 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
   .blogIntro{position:relative;top:0}
   .blogPost{padding:27px 20px 29px}
   .blogCopy p{font-size:16px}
+  .storyPage{padding:68px 0 98px}
+  .storyToolbar{align-items:flex-start}
+  .storyToolbar h2{font-size:32px}
+  .storyReader{padding:30px 36px}
+  .storySheet{margin-bottom:32px}
+  .storySheet figcaption{right:-28px}
   .timeline article{grid-template-columns:35px 90px 1fr;gap:11px;padding-inline:8px}
   .contactGrid{grid-template-columns:1fr}
   .contactGrid article{min-height:200px}
@@ -291,6 +309,11 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
   .radial{margin-top:25px}
   .summary{grid-template-columns:1fr}
   .summary>div{border-right:0}
+  .storyToolbar{display:block}
+  .storyToolbar>a{display:inline-block;margin-top:24px}
+  .storyReader{width:100%;margin-top:34px;padding:16px 15px;border-inline:0;box-shadow:none}
+  .storySheet{margin-bottom:18px}
+  .storySheet figcaption{display:none}
   .timeline article{grid-template-columns:32px 1fr}
   .timeline time{grid-column:2}
   .timeline article>div:last-child{grid-column:2}

@@ -5,7 +5,7 @@ const root = body.dataset.root || ".";
 const links = [
   ["menu", "MENU", `${root}/`],
   ["info", "INFO", `${root}/info/`],
-  ["progress", "PROGRESS", `${root}/progress/`],
+  ["story", "STORY", `${root}/story/`],
   ["logs", "LOGS", `${root}/logs/`],
   ["contact", "CONTACT", `${root}/contact/`],
 ];
@@ -20,7 +20,7 @@ body.insertAdjacentHTML("afterbegin", `
     <nav class="nav shell" aria-label="主导航">
       <a class="brand" href="${root}/"><span>R</span><strong>RIM</strong> <i>VICTORIA</i></a>
       <div class="navlinks">${navLinks}</div>
-      <a class="status" href="${root}/progress/"><b></b> LIVE ROADMAP</a>
+      <a class="status" href="${root}/story/"><b></b> READ STORY</a>
     </nav>
   </header>
 `);
