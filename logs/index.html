@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LOGS — RIM PROJECT</title>
-  <meta name="description" content="查看 RIM 的开发推进记录。">
+  <meta name="description" content="阅读 RIM 从愚人节企划走向可玩 Demo 的自然语言开发日志。">
   <meta property="og:title" content="LOGS — RIM PROJECT">
   <meta property="og:image" content="https://celecean.com/rim/assets/og.png">
   <link rel="canonical" href="https://celecean.com/rim/logs/">
@@ -13,25 +13,216 @@
   <script src="../assets/site.js" defer></script>
 </head>
 <body data-page="logs" data-root="..">
-  <main>
+  <main id="top">
     <section class="pageHero">
       <div class="shell">
         <p class="eyebrow">ARCHIVE / 03 — LOGS</p>
         <h1>开发日志</h1>
-        <p>任务完成、启动与计划调整都会在这里留下时间记录。</p>
+        <p>从规则设计、第一行代码到朋友测试：用自然的语言，记录 RIM 一天天成为游戏的过程。</p>
       </div>
       <div class="pageHeroMark">RIM</div>
     </section>
 
-    <section class="logsPage">
-      <div class="shell logsLayout">
-        <aside>
-          <p class="sectionNo">// UPDATE ARCHIVE</p>
-          <h2>每一次状态变化，都是开发留下的脚印。</h2>
-          <p>公开日志与路线图读取同一份仓库数据。更新任务状态并推送后，这里会展示最新记录。</p>
-          <a href="../progress/">查看开发路线 ↗</a>
+    <section class="blogPage">
+      <div class="shell blogLayout">
+        <aside class="blogIntro">
+          <p class="sectionNo">// DEV DIARY</p>
+          <h2>从一个愚人节玩笑，慢慢做成真的。</h2>
+          <p>这里不再是一串冷冰冰的状态变化，而是 RIM 从规则、代码、测试到故事逐渐成形的过程。全部日志按时间顺序排在同一页，向下滚动即可继续阅读。</p>
+          <div class="blogCount"><strong>27</strong><span>篇日志<br>2026.04 — 2026.07</span></div>
+          <a href="#log-2026-04-01">从第一篇开始 ↓</a>
         </aside>
-        <div class="timeline" id="timeline"><div class="loading">正在读取开发日志…</div></div>
+
+        <div class="blogFeed">
+          <article class="blogPost" id="log-2026-04-01">
+            <header><time datetime="2026-04-01">2026 / 04 / 01</time><span>RIM DEVLOG · 01</span></header>
+            <h2>一个本来只该活一天的企划</h2>
+            <div class="blogCopy"><p>RIM 最早以愚人节企划的身份登场。那时的设计很像“回合制的塔防游戏”——怎么说呢，颇有一种集合两家之短的气质。</p><p>当时我真的只把它当成一个玩笑。现在回头看，或许愚人节不开玩笑，本身也算一种愚人节玩笑。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-04-29">
+            <header><time datetime="2026-04-29">2026 / 04 / 29</time><span>RIM DEVLOG · 02</span></header>
+            <h2>决定让故事轻松一点</h2>
+            <div class="blogCopy"><p>这段时间断断续续写过一些剧情，但大多是很有“这片大地”味道的苦难叙事。我原本觉得，同人作品应该尽可能贴近原作的风格。</p><p>后来读了几款新游戏的剧情，又想起自己看到的许多同人作品总喜欢迫害小羊，我忽然意识到：也许我真正擅长、也真正想写的，是更轻松、更愉快，偶尔还有点无厘头的故事。RIM 的叙事方向就这样慢慢转了弯。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-06-07">
+            <header><time datetime="2026-06-07">2026 / 06 / 07</time><span>RIM DEVLOG · 03</span></header>
+            <h2>先把规则写成真正的文件</h2>
+            <div class="blogCopy"><p>大致完成了整套游戏规则文件。今天回头看，RIM 现在绝大多数核心内容，其实都在这个阶段确定了下来。</p><p>当然，写完之后我才想起：这个时间比起设计游戏，好像更应该准备考试。对不起，baka。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-06-25">
+            <header><time datetime="2026-06-25">2026 / 06 / 25</time><span>RIM DEVLOG · 04</span></header>
+            <h2>考试结束，开发正式开始</h2>
+            <div class="blogCopy"><p>终于考完了。与此同时，最初版本的数值系统也设计完成，敌人、干员、物品、装备、任务、奇遇事件、天赋和商店都有了第一套可以讨论的规则。</p><p>测试很快证明这套数值还有很多问题——比如，让一个刚出新手村、只有 400 血和 25 防的角色去接 300 攻击敌人的一拳，实在不能算友好。</p><p>但不管怎样，今天可以被认真地记作 RIM 正式开始开发的日子。它的形式受到《Acfun 大逃杀》的启发，不过我喜欢的是那套选择与推进的结构，不是血腥内容。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-06-26">
+            <header><time datetime="2026-06-26">2026 / 06 / 26</time><span>RIM DEVLOG · 05</span></header>
+            <h2>用好感度换掉指挥等级</h2>
+            <div class="blogCopy"><p>开发第二天。早期版本曾经像集成战略一样设置“指挥等级”，能力值系统也受过《寻梦之旅》的影响。真正测试后，我发现指挥等级与其他系统的定位重叠，于是换成了更符合 RIM 的答案：核心干员好感度。</p><p>以后要记得常和核心干员交流、送她们喜欢的礼物。好感度奖励与核心干员天赋也随之重做，“终结技”系统则提前留好了位置。</p><p>资源系统也在今天重新整理。“罗德币”和“源石”成为两种主要货币；队伍不能随时随地任意调整，新干员加入时需要调离旧干员，而召回与进阶会消耗源石。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-06-27">
+            <header><time datetime="2026-06-27">2026 / 06 / 27</time><span>RIM DEVLOG · 06</span></header>
+            <h2>第一行代码</h2>
+            <div class="blogCopy"><p>今天在 Codex 老师的帮助下，终于开始把规则写成真正能运行的代码。</p><p>呃，好难。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-06-28">
+            <header><time datetime="2026-06-28">2026 / 06 / 28</time><span>RIM DEVLOG · 07</span></header>
+            <h2>它终于能动了</h2>
+            <div class="blogCopy"><p>至少，一个真的能动起来的版本已经出现了。</p><p>我对 RIM 的要求一向朴素：立绘好看、引擎大牌、游戏能动。现在已经实现了其中的三分之二——当然，这是误导性统计。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-06-29">
+            <header><time datetime="2026-06-29">2026 / 06 / 29</time><span>RIM DEVLOG · 08</span></header>
+            <h2>把 UI 调得更可爱</h2>
+            <div class="blogCopy"><p>开发第五天，主要工作是修改 UI。虽然 RIM 是一款 2D 策略游戏，我还是更喜欢偏可爱、让人愿意多看一会儿的界面风格。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-06-30">
+            <header><time datetime="2026-06-30">2026 / 06 / 30</time><span>RIM DEVLOG · 09</span></header>
+            <h2>敌人与任务，以及明天的考试</h2>
+            <div class="blogCopy"><p>调整了敌人和任务系统，但结果还没有到让我满意的程度。很多东西看起来已经成形，真正玩起来却总会暴露出新的问题。</p><p>以及——啊！明天好像还有一门期末考试！</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-01">
+            <header><time datetime="2026-07-01">2026 / 07 / 01</time><span>RIM DEVLOG · 10</span></header>
+            <h2>背包上限与“屠龙者”</h2>
+            <div class="blogCopy"><p>新增了背包系统，现在不同种类的物品都有数量上限。这样设计并不是想故意为难玩家，而是担心东西堆得太多，最后谁也想不起该怎么用。</p><p>我一边做，一边想起自己并不喜欢某款游戏的 35 格背包上限，差点怀疑是不是“屠龙者终成龙”。好在 RIM 会在获得物品后立即进入取舍界面，不需要再花时间翻背包清库存。</p><p>总之，只要有任何设计让人不舒服，我都欢迎大家直接批评。能改掉的问题，就不必硬撑着说它是特色。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-02">
+            <header><time datetime="2026-07-02">2026 / 07 / 02</time><span>RIM DEVLOG · 11</span></header>
+            <h2>操作顺手了一点</h2>
+            <div class="blogCopy"><p>重新调整了一些界面的结构，操作比之前方便了不少。</p><p>关键词解释依然很重要，只是一直没腾出时间补齐。先记在这里，免得未来的我继续假装没看见。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-03">
+            <header><time datetime="2026-07-03">2026 / 07 / 03</time><span>RIM DEVLOG · 12</span></header>
+            <h2>第一次朋友测试</h2>
+            <div class="blogCopy"><p>今天和朋友们完成了 Demo 的第一次测试。整体感觉还挺牢的——当然，最主要的原因也可能是很多系统根本还没有做完。</p><p>不过，我确实听到了不少宝贵的建议。一个设计从自己的脑子里走到别人手上之后，很多原本看不见的问题都会突然变得清楚。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-04">
+            <header><time datetime="2026-07-04">2026 / 07 / 04</time><span>RIM DEVLOG · 13</span></header>
+            <h2>重做招募：把敌人变成队友</h2>
+            <div class="blogCopy"><p>开始重做干员招募系统。“可以招募此前在战斗中击败的干员”这个想法被保留了下来，我觉得它很适合 RIM 的旅程感。</p><p>除此之外，干员被划分为三个稀有度。希望即使没有真正的抽卡，也能做出一点揭晓结果时的期待和快乐。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-05">
+            <header><time datetime="2026-07-05">2026 / 07 / 05</time><span>RIM DEVLOG · 14</span></header>
+            <h2>敌人不该只是换皮数值</h2>
+            <div class="blogCopy"><p>接着开始重做敌人系统。我最终决定，多数敌人的战斗表现应该与她们作为干员时的技能和天赋相呼应。</p><p>RIM 之前，我曾设计过另一套策略回合制规则，也为它做过一些敌人。现在看来，不能把旧机制生搬硬套过来；更有趣的做法，是把《明日方舟》中干员的特点，用合理的方式转译成 RIM 里的对手。</p><p>至于二次创作里要不要加入原创角色，我以前是支持的，现在则变得非常谨慎。至少在 RIM 里，现阶段还是先把大家熟悉的角色做好。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-11">
+            <header><time datetime="2026-07-11">2026 / 07 / 11</time><span>RIM DEVLOG · 15</span></header>
+            <h2>实习按下了暂停键</h2>
+            <div class="blogCopy"><p>从 7 月 6 日开始参加实习，RIM 的开发不得不停下来一段时间。很遗憾，也很抱歉。</p><p>暂停并不意味着结束。只是现实生活偶尔会把开发者从电脑前拖走，而项目要在原地等一会儿。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-12">
+            <header><time datetime="2026-07-12">2026 / 07 / 12</time><span>RIM DEVLOG · 16</span></header>
+            <h2>让机制成长，而不是数值膨胀</h2>
+            <div class="blogCopy"><p>重新确认了 RIM 的方向。按照早期概念继续做下去，系统很容易落入不断堆高数值的循环。现在的目标，是像《明日方舟》那样，让机制的变化比单纯的数值增长更重要。</p><p>我也担心机制太多会变成“教玩家玩游戏”。目前的解决方案是用难度等级来区分体验。</p><p>偷偷告诉你：计划中的难度只有《简单》和《非常简单》。至于到底有多简单，大概是 ChatGPT 5.6 sol 开到极高思考也未必能过关的程度。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-15">
+            <header><time datetime="2026-07-15">2026 / 07 / 15</time><span>RIM DEVLOG · 17</span></header>
+            <h2>盟约与破防值</h2>
+            <div class="blogCopy"><p>我讨厌上班，因为它让我没空做游戏；嘉年华又越来越近，还得同时准备现场内容。不过今天总算整理完了战斗补充方案，并加入“盟约”等新系统。</p><p>破防值也在今天加入。许多游戏把破防放在敌人身上，RIM 则只有我方会积累破防值。部分敌人的攻击会推动它上升；一旦叠满，我方下回合造成的伤害会降低，并根据敌人的特点承受额外效果。</p><p>你问破防后为什么不是行动延迟、受到伤害提升？嗯，因为有些敌人会使用体术攻击。至于这个数值真正代表什么……还是先给它留一点官网不宜明说的想象空间吧。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-16">
+            <header><time datetime="2026-07-16">2026 / 07 / 16</time><span>RIM DEVLOG · 18</span></header>
+            <h2>Demo 2 开始了</h2>
+            <div class="blogCopy"><p>Demo 2 的开发正式启动。这一阶段的具体内容暂时保密，敬请期待之后的公开。</p><p>也非常欢迎更多朋友参加测试。会准备各种小奖品，认真感谢每一位愿意帮忙把问题找出来的人。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-17">
+            <header><time datetime="2026-07-17">2026 / 07 / 17</time><span>RIM DEVLOG · 19</span></header>
+            <h2>被黑流树海拐走的一天</h2>
+            <div class="blogCopy"><p>今天沉迷黑流树海。集成战略毁了我。真的。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-21">
+            <header><time datetime="2026-07-21">2026 / 07 / 21</time><span>RIM DEVLOG · 20</span></header>
+            <h2>从树海回来，终于告别 Excel</h2>
+            <div class="blogCopy"><p>连续打了好几天黑流树海，差点忘记 RIM 是什么。好在亡羊补牢，为时未晚。</p><p>今天正式实装了 RIM 的数据编辑器。以后终于可以不用 Excel 维护所有游戏数据了，这大概是近期最能拯救开发体验的一次更新。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-22">
+            <header><time datetime="2026-07-22">2026 / 07 / 22</time><span>RIM DEVLOG · 21</span></header>
+            <h2>博士技能实装</h2>
+            <div class="blogCopy"><p>把之前一直欠着的博士技能做进了游戏。它有一点像《命运：冠位指定》中的御主技能：不直接站到场上，却能在关键时刻改变战斗节奏。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-23">
+            <header><time datetime="2026-07-23">2026 / 07 / 23</time><span>RIM DEVLOG · 22</span></header>
+            <h2>统一术语：SP、CD、EN</h2>
+            <div class="blogCopy"><p>统一了游戏中各类关键词的写法：技力统一为 SP，倒数统一为 CD，敌人的能量统一为 EN。</p><p>这些看似只是几个字母，但对需要频繁阅读技能说明的策略游戏来说，稳定、清楚的语言本身就是操作体验的一部分。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-26">
+            <header><time datetime="2026-07-26">2026 / 07 / 26</time><span>RIM DEVLOG · 23</span></header>
+            <h2>嘉年华无料插曲</h2>
+            <div class="blogCopy"><p>从 24 日开始联系画师，为小羊制作嘉年华无料明信片。花了三天把设计做完，结果刚收尾就看到奶羊的新皮肤——被海猫精准偷袭。</p><p>卫戍主题的无料也在同步设计。如果你是在 8 月 1 日的嘉年华现场通过二维码看到这篇日志，那你大概已经拿到它了。希望你喜欢。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-27">
+            <header><time datetime="2026-07-27">2026 / 07 / 27</time><span>RIM DEVLOG · 24</span></header>
+            <h2>盟约真正有了形状</h2>
+            <div class="blogCopy"><p>正式实装了“盟约”关键词。同一盟约下的关键词会彼此共享、互相呼应，最终形成一套可以围绕它构筑并战斗的流派。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-29">
+            <header><time datetime="2026-07-29">2026 / 07 / 29</time><span>RIM DEVLOG · 25</span></header>
+            <h2>实习又来偷时间</h2>
+            <div class="blogCopy"><p>我恨实习。偏偏在嘉年华临近、项目需要时间的危急存亡之际，工作突然多了起来。</p><p>今天的主要进展，是努力没有把 RIM 忘掉。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-30">
+            <header><time datetime="2026-07-30">2026 / 07 / 30</time><span>RIM DEVLOG · 26</span></header>
+            <h2>梦里长出来的新手教程</h2>
+            <div class="blogCopy"><p>梦见了一段与空弦有关的剧情，醒来后忽然发现，它很适合被做成带有完整故事的新手教程。Demo 2 已经不可能赶在嘉年华前完成，所以我决定先把这段剧情放到网上公开。</p><p>写到一半时我还在实习，旁边突然站了许多老师讨论事情。为了不让他们看见屏幕上那些奇怪的文本，我只好暂时降低大脑功率，把剩下的想法憋到回家再写。现在，它已经被放进教程文本里了。</p><p>代价是下班时同学来找我聊天，我的回答全都乱七八糟。悲。</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+
+          <article class="blogPost" id="log-2026-07-31">
+            <header><time datetime="2026-07-31">2026 / 07 / 31</time><span>RIM DEVLOG · 27</span></header>
+            <h2>另一个梦，与可能的 DLC</h2>
+            <div class="blogCopy"><p>今天又梦见了和迷迭香有关的剧情，正在认真考虑要不要加入。昨天恰好还讨论过 DLC 的可能性，希望未来能让更多核心干员进入 RIM。</p><p>真正让我犹豫的是，梦里的迷迭香非常认真地催我“实装香香”，而且威胁方式颇为奇怪。</p><p>……迷迭香是这样的孩子吗？</p></div>
+            <div class="blogPostFooter"><span>DEVELOPMENT ARCHIVE</span><a href="#top">↑ TOP</a></div>
+          </article>
+        </div>
       </div>
     </section>
   </main>

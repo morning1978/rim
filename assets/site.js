@@ -57,14 +57,6 @@ function formatDate(value) {
   }).format(new Date(value));
 }
 
-function formatTime(value) {
-  return new Intl.DateTimeFormat("zh-CN", {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-  }).format(new Date(value));
-}
-
 async function renderProgress() {
   const phaseList = document.querySelector("#phaseList");
   if (!phaseList) return;
@@ -117,24 +109,4 @@ async function renderProgress() {
   }
 }
 
-async function renderLogs() {
-  const timeline = document.querySelector("#timeline");
-  if (!timeline) return;
-
-  try {
-    const data = await loadProgressData();
-    const updates = data.updates || [];
-    timeline.innerHTML = updates.length ? updates.map((update, index) => `
-      <article>
-        <div class="timelineNo">${String(index + 1).padStart(2, "0")}</div>
-        <time>${formatDate(update.created_at)}<small>${formatTime(update.created_at)}</small></time>
-        <div><span>${update.action}</span><h3>${update.title}</h3></div>
-      </article>
-    `).join("") : '<p class="empty">第一条更新将在任务状态变化后出现。</p>';
-  } catch {
-    timeline.innerHTML = '<p class="empty error">暂时无法读取开发日志，请稍后刷新。</p>';
-  }
-}
-
 renderProgress();
-renderLogs();
