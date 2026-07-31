@@ -180,7 +180,8 @@ img{max-width:100%}
 .blogIntro{position:sticky;top:105px;padding:28px;border:3px solid var(--navy);background:var(--cream-light);box-shadow:8px 8px 0 var(--sky)}
 .blogIntro h2{font:900 35px/1.28 var(--display);letter-spacing:-.045em;margin:17px 0;color:var(--navy)}
 .blogIntro>p:not(.sectionNo){color:var(--muted);font-size:13px;line-height:1.9}
-.blogIntro>a{display:inline-block;margin-top:24px;padding-bottom:4px;border-bottom:2px solid var(--navy);font:900 10px var(--mono);letter-spacing:.08em;text-decoration:none}
+.blogIntro>a{display:block;width:fit-content;margin-top:24px;padding-bottom:4px;border-bottom:2px solid var(--navy);font:900 10px var(--mono);letter-spacing:.08em;text-decoration:none}
+.blogIntro>a+a{margin-top:12px}
 .blogCount{display:flex;align-items:center;gap:15px;margin-top:25px;padding:17px 0;border-block:2px solid var(--navy)}
 .blogCount strong{font:900 48px/1 var(--display);color:var(--sky);-webkit-text-stroke:1px var(--navy)}
 .blogCount span{font:800 10px/1.6 var(--mono);color:var(--blue)}
