@@ -66,7 +66,7 @@ img{max-width:100%}
 .chapter{position:absolute;right:4%;bottom:30px;font:900 68px var(--display);color:#fffaf09e;-webkit-text-stroke:2px var(--navy);text-shadow:4px 4px 0 var(--sky)}
 .chapter span{font:800 10px var(--mono);color:var(--cream-light);letter-spacing:.14em;-webkit-text-stroke:0;text-shadow:none}
 
-.portal{padding:100px 0 112px}
+.portal{padding:100px 0 112px;scroll-margin-top:24px}
 .portalHead{display:grid;grid-template-columns:1fr .75fr;gap:100px;align-items:end;margin-bottom:48px}
 .portalHead h2,.intro h2,.roadmapHead h2,.logsLayout h2,.contactIntro h2{font-size:42px;line-height:1.25;margin:16px 0 0;color:var(--navy)}
 .portalHead>p{color:var(--muted);line-height:1.9;font-size:13px;margin:0}
@@ -251,13 +251,13 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
   .navlinks{position:fixed;z-index:30;left:12px;right:12px;bottom:12px;top:auto;transform:none;height:56px;gap:0;justify-content:space-around;background:#083a7af2;border:2px solid var(--sky);box-shadow:0 10px 35px #062d6275;backdrop-filter:blur(12px)}
   .navlinks a{font-size:8px;flex:1;text-align:center;padding:19px 2px}
   .navlinks a:after{left:25%;right:25%;bottom:2px}
-  .hero{height:930px}
+  .hero{height:1000px}
   .heroShade{background:linear-gradient(90deg,#f4ecd9f7,#f4ecd9d9),linear-gradient(0deg,#083a7a33,transparent)}
   .heroContent{padding-top:102px}
   .heroLogo{width:min(430px,88vw);margin-left:-16px}
   .hero h1{width:100%;font-size:42px;text-shadow:4px 4px 0 var(--sky)}
   .lead{width:100%;max-width:580px;font-size:13px}
-  .heroCarousel{left:15px;right:15px;top:590px;width:auto;height:260px;clip-path:none;box-shadow:7px 7px 0 var(--sky)}
+  .heroCarousel{left:15px;right:15px;top:690px;width:auto;height:260px;clip-path:none;box-shadow:7px 7px 0 var(--sky)}
   .heroSlide figcaption{left:16px;bottom:14px}
   .chapter{display:none}
   .portal{padding:72px 0}
@@ -315,9 +315,9 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
 
 @media(max-width:520px){
   .brand i{display:none}
-  .hero{height:940px}
+  .hero{height:1010px}
   .hero h1{font-size:36px}
-  .heroCarousel{top:635px;height:220px}
+  .heroCarousel{top:720px;height:220px}
   .actions{align-items:flex-start;flex-direction:column}
   .featureLine{display:grid;grid-template-columns:1fr 1fr}
   .roadmapHead{display:block}
