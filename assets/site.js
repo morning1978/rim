@@ -125,7 +125,8 @@ async function renderNarrativeLogs() {
   if (!feed) return;
 
   try {
-    const response = await fetch(`${root}/data/devlogs.json`, { cache: "no-store" });
+    const source = body.dataset.logSource || "devlogs.json";
+    const response = await fetch(`${root}/data/${source}`, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const entries = await response.json();
     feed.innerHTML = entries.map((entry, index) => `
