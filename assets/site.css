@@ -207,12 +207,7 @@ img{max-width:100%}
 .infoCovenant .blogCopy>p:nth-of-type(even){color:var(--navy)}
 .infoOverviewCard .infoFormula{margin:24px 0 0;padding:20px 0 0;border:0;border-top:2px solid var(--navy);background:transparent}
 .infoOverviewCard .infoFormula p{margin:0 0 11px;font-size:14px;line-height:1.75}
-.infoGuide{border-left-width:8px;border-left-color:var(--sky)}
 .infoGuide .blogCopy h2{font-size:42px}
-.infoGuide .blogCopy h2 small{display:block;margin-top:8px;font:900 12px/1.3 var(--mono);letter-spacing:.12em;color:var(--navy)}
-.infoGuide .blogCount{max-width:360px}
-.infoGuideLinks{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:24px}
-.infoGuideLinks a{font:900 10px var(--mono);letter-spacing:.08em}
 
 .storyPage{padding:82px 0 116px;background:linear-gradient(90deg,#0d4b9608 1px,transparent 1px);background-size:72px 72px}
 .storyToolbar{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
