@@ -20,7 +20,6 @@ body.insertAdjacentHTML("afterbegin", `
     <nav class="nav shell" aria-label="主导航">
       <a class="brand" href="${root}/"><span>R</span><strong>RIM</strong></a>
       <div class="navlinks">${navLinks}</div>
-      <a class="status" href="${root}/story/"><b></b> READ STORY</a>
     </nav>
   </header>
 `);
