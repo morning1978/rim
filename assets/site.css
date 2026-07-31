@@ -211,9 +211,10 @@ img{max-width:100%}
 .contactPage{padding:96px 0 116px}
 .contactPage>.shell{display:grid;grid-template-columns:.7fr 1.3fr;gap:76px}
 .contactIntro>p:not(.sectionNo){color:var(--muted);font-size:13px;line-height:1.9}
-.contactMail{display:block;margin-top:32px;padding:22px;border:3px solid var(--navy);background:var(--cream-light);box-shadow:7px 7px 0 var(--sky);text-decoration:none}
-.contactMail span,.contactMail b{display:block;font:900 9px var(--mono);letter-spacing:.1em;color:var(--blue)}
+.contactMail{display:block;margin-top:32px;padding:22px;border:3px solid var(--navy);background:var(--cream-light);box-shadow:7px 7px 0 var(--sky)}
+.contactMail span{display:block;font:900 9px var(--mono);letter-spacing:.1em;color:var(--blue)}
 .contactMail strong{display:block;margin:18px 0;font:900 19px var(--display);color:var(--navy);word-break:break-all}
+.contactMail a{display:inline-block;font:900 9px var(--mono);letter-spacing:.1em;color:var(--blue);text-decoration-thickness:2px;text-underline-offset:4px}
 .contactLetter{padding:38px 42px;border:3px solid var(--navy);background:var(--cream-light);box-shadow:8px 8px 0 #0d4b9620}
 .contactLetter p{font-size:17px;line-height:1.9;color:#314f72;margin:0 0 15px}
 .contactLetter p:last-child{margin:27px 0 0;font-weight:800;color:var(--navy)}
