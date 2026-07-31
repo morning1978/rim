@@ -196,6 +196,15 @@ img{max-width:100%}
 .blogCopy p:last-child{margin-bottom:0}
 .blogPostFooter{display:none}
 
+.infoReading .blogIntro h2{font-size:33px}
+.infoFeed .blogPost{scroll-margin-top:28px}
+.infoFeed .blogCopy h2{display:block;margin:0 0 20px;font:900 30px/1.25 var(--display);letter-spacing:-.035em;color:var(--navy)}
+.infoFeed .blogCopy h2:not(:first-child){margin-top:38px;padding-top:28px;border-top:2px solid #6688aa}
+.infoFeed .blogCopy a{color:var(--blue);font-weight:900;text-decoration-thickness:2px;text-underline-offset:4px}
+.infoFormula{margin:25px 0 34px;padding:22px 24px;border-left:6px solid var(--sky);background:#0d4b960b}
+.infoFormula p{font-weight:800;color:var(--navy)}
+.infoCovenant .blogCopy>p:nth-of-type(even){color:var(--navy)}
+
 .storyPage{padding:82px 0 116px;background:linear-gradient(90deg,#0d4b9608 1px,transparent 1px);background-size:72px 72px}
 .storyToolbar{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
 .storyToolbar h2{font:900 39px/1.15 var(--display);letter-spacing:-.04em;margin:12px 0 8px;color:var(--navy)}
