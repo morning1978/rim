@@ -196,14 +196,23 @@ img{max-width:100%}
 .blogCopy p:last-child{margin-bottom:0}
 .blogPostFooter{display:none}
 
-.infoReading .blogIntro h2{font-size:33px}
+.infoReading .blogLayout{grid-template-columns:.78fr 1.22fr;gap:68px}
+.infoReading .blogIntro h2{font-size:38px}
 .infoFeed .blogPost{scroll-margin-top:28px}
-.infoFeed .blogCopy h2{display:block;margin:0 0 20px;font:900 30px/1.25 var(--display);letter-spacing:-.035em;color:var(--navy)}
+.infoFeed .blogCopy h2{display:block;margin:0 0 20px;font:900 32px/1.2 var(--display);letter-spacing:-.035em;color:var(--blue)}
 .infoFeed .blogCopy h2:not(:first-child){margin-top:38px;padding-top:28px;border-top:2px solid #6688aa}
 .infoFeed .blogCopy a{color:var(--blue);font-weight:900;text-decoration-thickness:2px;text-underline-offset:4px}
 .infoFormula{margin:25px 0 34px;padding:22px 24px;border-left:6px solid var(--sky);background:#0d4b960b}
 .infoFormula p{font-weight:800;color:var(--navy)}
 .infoCovenant .blogCopy>p:nth-of-type(even){color:var(--navy)}
+.infoOverviewCard .infoFormula{margin:24px 0 0;padding:20px 0 0;border:0;border-top:2px solid var(--navy);background:transparent}
+.infoOverviewCard .infoFormula p{margin:0 0 11px;font-size:14px;line-height:1.75}
+.infoGuide{border-left-width:8px;border-left-color:var(--sky)}
+.infoGuide .blogCopy h2{font-size:42px}
+.infoGuide .blogCopy h2 small{display:block;margin-top:8px;font:900 12px/1.3 var(--mono);letter-spacing:.12em;color:var(--navy)}
+.infoGuide .blogCount{max-width:360px}
+.infoGuideLinks{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:24px}
+.infoGuideLinks a{font:900 10px var(--mono);letter-spacing:.08em}
 
 .storyPage{padding:82px 0 116px;background:linear-gradient(90deg,#0d4b9608 1px,transparent 1px);background-size:72px 72px}
 .storyToolbar{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
@@ -289,9 +298,11 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
   .logsPage,.contactPage{padding:72px 0 98px}
   .blogPage{padding:72px 0 98px}
   .blogLayout{grid-template-columns:1fr;gap:35px}
+  .infoReading .blogLayout{grid-template-columns:1fr;gap:35px}
   .blogIntro{position:relative;top:0}
   .blogPost{padding:27px 20px 29px}
   .blogCopy p{font-size:16px}
+  .infoGuide .blogCopy h2{font-size:35px}
   .storyPage{padding:68px 0 98px}
   .storyToolbar{align-items:flex-start}
   .storyToolbar h2{font-size:32px}
