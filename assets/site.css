@@ -185,17 +185,16 @@ img{max-width:100%}
 .blogCount strong{font:900 48px/1 var(--display);color:var(--sky);-webkit-text-stroke:1px var(--navy)}
 .blogCount span{font:800 10px/1.6 var(--mono);color:var(--blue)}
 .blogFeed{border-top:4px solid var(--navy)}
-.blogPost{scroll-margin-top:28px;padding:46px 30px 52px;border:3px solid var(--navy);border-top:0;background:var(--cream-light);box-shadow:7px 7px 0 #0d4b9614}
+.blogPost{scroll-margin-top:28px;padding:30px 30px 32px;border:3px solid var(--navy);border-top:0;background:var(--cream-light);box-shadow:7px 7px 0 #0d4b9614}
 .blogPost:nth-child(even){background:#e4f4f2}
-.blogPost header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:15px;border-bottom:2px solid #6688aa}
+.blogPost header{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:20px;padding-bottom:13px;border-bottom:2px solid #6688aa}
 .blogPost time{font:900 13px var(--mono);letter-spacing:.1em;color:var(--blue)}
 .blogPost header span{font:800 9px var(--mono);letter-spacing:.1em;color:var(--muted)}
-.blogPost h2{font:900 34px/1.25 var(--display);letter-spacing:-.04em;color:var(--navy);margin:27px 0 23px}
+.blogPost h2{display:none}
 .blogCopy{max-width:680px}
-.blogCopy p{font-size:15px;line-height:2;color:#314f72;margin:0 0 15px}
-.blogCopy p:first-child:first-letter{float:left;margin:7px 8px 0 0;font:900 46px/.78 var(--display);color:var(--sky);-webkit-text-stroke:1px var(--navy)}
-.blogPostFooter{display:flex;justify-content:space-between;align-items:center;margin-top:31px;padding-top:14px;border-top:1px solid #86a0b8;font:800 9px var(--mono);letter-spacing:.11em;color:var(--muted)}
-.blogPostFooter a{color:var(--blue);text-decoration:none}
+.blogCopy p{font-size:17px;line-height:1.85;color:#314f72;margin:0 0 12px}
+.blogCopy p:last-child{margin-bottom:0}
+.blogPostFooter{display:none}
 
 .contactPage{padding:96px 0 116px}
 .contactPage>.shell{display:grid;grid-template-columns:.7fr 1.3fr;gap:76px}
@@ -270,8 +269,8 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
   .blogPage{padding:72px 0 98px}
   .blogLayout{grid-template-columns:1fr;gap:35px}
   .blogIntro{position:relative;top:0}
-  .blogPost{padding:36px 22px 42px}
-  .blogPost h2{font-size:29px}
+  .blogPost{padding:27px 20px 29px}
+  .blogCopy p{font-size:16px}
   .timeline article{grid-template-columns:35px 90px 1fr;gap:11px;padding-inline:8px}
   .contactGrid{grid-template-columns:1fr}
   .contactGrid article{min-height:200px}
