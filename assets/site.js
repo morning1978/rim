@@ -18,7 +18,7 @@ const navLinks = links.map(([id, label, href]) => {
 body.insertAdjacentHTML("afterbegin", `
   <header class="siteHeader ${page === "menu" ? "overlay" : ""}">
     <nav class="nav shell" aria-label="主导航">
-      <a class="brand" href="${root}/"><span>R</span><strong>RIM</strong></a>
+      <a class="brand brandLink" href="${root}/" aria-label="返回 RIM 首页"><img class="brandLogo" src="${root}/assets/rim-wordmark-source.png" alt="RIM"></a>
       <div class="navlinks">${navLinks}</div>
     </nav>
   </header>
@@ -27,7 +27,7 @@ body.insertAdjacentHTML("afterbegin", `
 body.insertAdjacentHTML("beforeend", `
   <footer>
     <div class="shell">
-      <div class="brand"><span>R</span><strong>RIM</strong></div>
+      <div class="brand footerBrand"><img class="brandLogo" src="${root}/assets/rim-wordmark-source.png" alt="RIM"></div>
       <p>干员们的现代演习</p>
       <small>《明日方舟》及相关角色版权归 HYPERGRYPH 所有。<br>© 2026 RIM DEV TEAM</small>
     </div>
