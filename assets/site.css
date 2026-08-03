@@ -36,7 +36,7 @@ img{max-width:100%}
 .hero{height:780px;position:relative;overflow:hidden;color:var(--navy);background:var(--cream)}
 .hero:before{content:"";position:absolute;inset:78px 0 0 0;background:linear-gradient(90deg,#0d4b9612 1px,transparent 1px),linear-gradient(#0d4b9612 1px,transparent 1px);background-size:54px 54px}
 .heroShade{position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,var(--cream) 0%,var(--cream) 47%,#f4ecd9e8 58%,transparent 76%),linear-gradient(0deg,#083a7a21 0%,transparent 36%)}
-.heroVisual{position:absolute;z-index:1;right:3.5%;top:132px;width:min(51vw,760px);height:430px;overflow:hidden;background:#020914;border:3px solid var(--navy);box-shadow:10px 10px 0 var(--sky);clip-path:polygon(7% 0,100% 0,100% 100%,0 100%)}
+.heroVisual{position:absolute;z-index:1;right:2.8%;top:150px;width:min(43vw,680px);height:auto;aspect-ratio:1414/762;overflow:hidden;background:#020914;border:3px solid var(--navy);box-shadow:10px 10px 0 var(--sky);clip-path:polygon(7% 0,100% 0,100% 100%,0 100%)}
 .heroFrame{position:absolute;inset:0;margin:0;display:grid;place-items:center;background:#020914}
 .heroFrame img{display:block;width:100%;height:100%;object-fit:contain}
 .heroFrame figcaption{position:absolute;left:30px;bottom:18px;padding:9px 12px;background:#083a7ae8;border-left:4px solid var(--sky);color:var(--cream-light);font:900 10px var(--mono);letter-spacing:.08em}
