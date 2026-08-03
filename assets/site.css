@@ -36,19 +36,10 @@ img{max-width:100%}
 .hero{height:780px;position:relative;overflow:hidden;color:var(--navy);background:var(--cream)}
 .hero:before{content:"";position:absolute;inset:78px 0 0 0;background:linear-gradient(90deg,#0d4b9612 1px,transparent 1px),linear-gradient(#0d4b9612 1px,transparent 1px);background-size:54px 54px}
 .heroShade{position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,var(--cream) 0%,var(--cream) 47%,#f4ecd9e8 58%,transparent 76%),linear-gradient(0deg,#083a7a21 0%,transparent 36%)}
-.heroCarousel{position:absolute;z-index:1;right:3.5%;top:132px;width:min(51vw,760px);height:430px;overflow:hidden;background:#020914;border:3px solid var(--navy);box-shadow:10px 10px 0 var(--sky);clip-path:polygon(7% 0,100% 0,100% 100%,0 100%)}
-.heroSlide{position:absolute;inset:0;margin:0;display:grid;place-items:center;background:#020914;opacity:0;animation:heroRotate 15s infinite both}
-.heroSlide:nth-child(2){animation-delay:5s}
-.heroSlide:nth-child(3){animation-delay:10s}
-.heroSlide img{display:block;width:100%;height:100%;object-fit:contain}
-.heroSlide figcaption{position:absolute;left:30px;bottom:18px;padding:9px 12px;background:#083a7ae8;border-left:4px solid var(--sky);color:var(--cream-light);font:900 10px var(--mono);letter-spacing:.08em}
-.heroSlide figcaption span{margin-left:16px;color:var(--sky)}
-.heroCarouselIndex{position:absolute;z-index:2;right:16px;top:16px;display:flex;gap:6px;padding:8px;background:#020914b8}
-.heroCarouselIndex i{display:block;width:24px;height:4px;background:#fffaf066;animation:heroPulse 15s infinite both}
-.heroCarouselIndex i:nth-child(2){animation-delay:5s}
-.heroCarouselIndex i:nth-child(3){animation-delay:10s}
-@keyframes heroRotate{0%,28%{opacity:1;transform:scale(1)}33%,95%{opacity:0;transform:scale(1.018)}100%{opacity:1;transform:scale(1)}}
-@keyframes heroPulse{0%,28%{background:var(--sky)}33%,95%{background:#fffaf066}100%{background:var(--sky)}}
+.heroVisual{position:absolute;z-index:1;right:3.5%;top:132px;width:min(51vw,760px);height:430px;overflow:hidden;background:#020914;border:3px solid var(--navy);box-shadow:10px 10px 0 var(--sky);clip-path:polygon(7% 0,100% 0,100% 100%,0 100%)}
+.heroFrame{position:absolute;inset:0;margin:0;display:grid;place-items:center;background:#020914}
+.heroFrame img{display:block;width:100%;height:100%;object-fit:contain}
+.heroFrame figcaption{position:absolute;left:30px;bottom:18px;padding:9px 12px;background:#083a7ae8;border-left:4px solid var(--sky);color:var(--cream-light);font:900 10px var(--mono);letter-spacing:.08em}
 .heroContent{position:relative;z-index:2;padding-top:128px}
 .heroLogo{display:block;width:min(390px,40vw);height:auto;margin:0 0 6px -24px}
 .hero h1,.pageHero h1,.portalHead h2,.intro h2,.roadmapHead h2,.logsLayout h2,.contactIntro h2{
@@ -257,8 +248,8 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
   .heroLogo{width:min(430px,88vw);margin-left:-16px}
   .hero h1{width:100%;font-size:42px;text-shadow:4px 4px 0 var(--sky)}
   .lead{width:100%;max-width:580px;font-size:13px}
-  .heroCarousel{left:15px;right:15px;top:690px;width:auto;height:260px;clip-path:none;box-shadow:7px 7px 0 var(--sky)}
-  .heroSlide figcaption{left:16px;bottom:14px}
+  .heroVisual{left:15px;right:15px;top:690px;width:auto;height:260px;clip-path:none;box-shadow:7px 7px 0 var(--sky)}
+  .heroFrame figcaption{left:16px;bottom:14px}
   .chapter{display:none}
   .portal{padding:72px 0}
   .portalHead,.intro,.logsLayout,.contactPage>.shell{grid-template-columns:1fr;gap:28px}
@@ -316,7 +307,7 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
 @media(max-width:520px){
   .hero{height:1010px}
   .hero h1{font-size:36px}
-  .heroCarousel{top:720px;height:220px}
+  .heroVisual{top:720px;height:220px}
   .actions{align-items:flex-start;flex-direction:column}
   .featureLine{display:grid;grid-template-columns:1fr 1fr}
   .roadmapHead{display:block}
@@ -336,7 +327,4 @@ footer small{text-align:right;color:#849eb8;font:9px var(--mono);line-height:1.7
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{transition:none!important}
-  .heroSlide,.heroCarouselIndex i{animation:none!important}
-  .heroSlide:first-child{opacity:1}
-  .heroCarouselIndex i:first-child{background:var(--sky)}
 }
