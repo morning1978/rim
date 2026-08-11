@@ -128,11 +128,12 @@ async function renderNarrativeLogs() {
     const response = await fetch(`${root}/data/${source}`, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const entries = await response.json();
+    const logLabel = source === "devlogs-2.json" ? "RIM DEVLOG 2" : source === "prologue-logs.json" ? "RIM PROLOGUE" : "RIM DEVLOG";
     feed.innerHTML = entries.map((entry, index) => `
       <article class="blogPost" id="log-${escapeHtml(entry.slug)}">
         <header>
           <time datetime="${escapeHtml(entry.slug)}">${escapeHtml(entry.date)}</time>
-          <span>RIM DEVLOG · ${String(index + 1).padStart(2, "0")}</span>
+          <span>${logLabel} · ${String(index + 1).padStart(2, "0")}</span>
         </header>
         <div class="blogCopy">${entry.paragraphs.map(paragraph => `<p>${escapeHtml(paragraph)}</p>`).join("")}</div>
       </article>
